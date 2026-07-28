@@ -1,0 +1,137 @@
+{
+  "common": {
+    "siteName": "Solix",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "footer": {
+      "description": "Powering a sustainable future with solar energy solutions.",
+      "quickLinks": "Quick Links",
+      "contact": "Contact",
+      "rights": "All rights reserved."
+    },
+    "contactInfo": {
+      "hours": "Sun–Thu, 9:00 AM – 6:00 PM"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Power Your World with",
+      "titleHighlight": "Solar Energy",
+      "subtitle": "Solix provides complete solar solutions — from high-quality panels and professional installation to consulting, maintenance, and buying used components.",
+      "ctaServices": "Our Services",
+      "ctaContact": "Get in Touch"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "End-to-end solar solutions tailored to your needs.",
+      "viewAll": "View All Services"
+    },
+    "cta": {
+      "title": "Ready to Go Solar?",
+      "subtitle": "Get in touch with us for a free consultation and assessment.",
+      "button": "Contact Us"
+    }
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "Solix",
+    "subtitle": "We are dedicated to making solar energy accessible, affordable, and reliable for everyone.",
+    "mission": {
+      "title": "Our Mission",
+      "desc": "At Solix, our mission is to accelerate the transition to renewable energy by providing comprehensive solar solutions. We believe that clean energy should be within reach for every home and business."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "desc": "A future where solar energy powers communities, reduces carbon footprints, and creates a sustainable world for the next generations."
+    },
+    "whyUs": {
+      "title": "Why Choose Solix?",
+      "items": [
+        {
+          "title": "End-to-End Service",
+          "desc": "From consultation and supply to installation and maintenance — we handle everything."
+        },
+        {
+          "title": "Quality Products",
+          "desc": "We partner with leading manufacturers to deliver reliable, high-performance equipment."
+        },
+        {
+          "title": "Sustainable Practices",
+          "desc": "We buy used components and recycle responsibly, closing the loop on solar waste."
+        }
+      ]
+    },
+    "cta": "Want to learn more?",
+    "ctaLink": "Get in touch"
+  },
+  "services": {
+    "title": "Our",
+    "titleHighlight": "Services",
+    "subtitle": "Comprehensive solar solutions from start to finish and beyond.",
+    "list": [
+      {
+        "title": "Selling Solar Panels",
+        "desc": "We supply high-quality solar panels and equipment from trusted manufacturers, ensuring top performance and durability for residential and commercial projects.",
+        "features": ["High-efficiency monocrystalline & polycrystalline panels", "Inverters, batteries, and mounting systems", "Competitive pricing with warranty coverage"]
+      },
+      {
+        "title": "Installation & Finishing",
+        "desc": "Professional end-to-end installation services, from roofing prep to final connection. We handle every aspect of site finishing for a seamless solar setup.",
+        "features": ["Full-site preparation and structural reinforcement", "Panel mounting, wiring, and inverter setup", "Grid connection and final inspection support"]
+      },
+      {
+        "title": "Consulting & Assessment",
+        "desc": "We evaluate your location, energy needs, and structural readiness to recommend the optimal solar solution tailored to your property.",
+        "features": ["On-site energy audit and consumption analysis", "Shading analysis and solar potential mapping", "System sizing, ROI projections, and payback estimates"]
+      },
+      {
+        "title": "Maintenance & Support",
+        "desc": "Keep your solar system running at peak performance with our ongoing maintenance plans and responsive support team.",
+        "features": ["Scheduled panel cleaning and inspection", "Performance monitoring and diagnostics", "Emergency repairs and component replacement"]
+      },
+      {
+        "title": "Buying Used Components",
+        "desc": "We purchase used solar panels, inverters, and location equipment. A sustainable way to upgrade your system while recovering value from old components.",
+        "features": ["Fair market valuation on used equipment", "Free pick-up and removal service", "Environmentally responsible recycling partnership"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in",
+    "titleHighlight": "Touch",
+    "subtitle": "Have a question or ready to start your solar journey? We are here to help.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "hours": "Business Hours",
+    "response": "We typically respond within 24 hours."
+  },
+  "portfolio": {
+    "title": "Our",
+    "titleHighlight": "Portfolio",
+    "subtitle": "Take a look at some of our completed projects — we take pride in every installation.",
+    "empty": "No projects added yet. They will appear here soon.",
+    "items": {
+      "villa-6-october": {
+        "title": "Villa — 6 October",
+        "desc": "Complete 10kW solar system installation for a residential villa in 6 October City."
+      },
+      "commercial-maadi": {
+        "title": "Commercial Building — Maadi",
+        "desc": "Supply and installation of solar panels for a commercial building in Maadi."
+      },
+      "factory-6-october": {
+        "title": "Factory — 6 October",
+        "desc": "50kW solar energy solution for an industrial factory in 6 October industrial zone."
+      }
+    }
+  },
+  "localeSwitcher": {
+    "label": "عربي"
+  }
+}

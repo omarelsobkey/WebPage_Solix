@@ -3,24 +3,28 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --solix-gold: #D4AF37;
+  --solix-cream: #F9EFCF;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-solix-gold: var(--solix-gold);
+  --color-solix-cream: var(--solix-cream);
+  --color-solix-black: #000000;
+  --color-solix-white: #FFFFFF;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  }
 }
