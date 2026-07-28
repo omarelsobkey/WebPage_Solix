@@ -1,6 +1,6 @@
 {
   "common": {
-    "siteName": "Solix",
+    "siteName": "SOLIX Power",
     "nav": {
       "home": "Home",
       "about": "About",
@@ -15,14 +15,15 @@
       "rights": "All rights reserved."
     },
     "contactInfo": {
-      "hours": "Sun–Thu, 9:00 AM – 6:00 PM"
+      "sales": "Sales",
+      "support": "Support"
     }
   },
   "home": {
     "hero": {
       "title": "Power Your World with",
       "titleHighlight": "Solar Energy",
-      "subtitle": "Solix provides complete solar solutions — from high-quality panels and professional installation to consulting, maintenance, and buying used components.",
+      "subtitle": "SOLIX Power provides complete solar solutions — from high-quality panels and professional installation to consulting, maintenance, and buying used components.",
       "ctaServices": "Our Services",
       "ctaContact": "Get in Touch"
     },
@@ -39,18 +40,18 @@
   },
   "about": {
     "title": "About",
-    "titleHighlight": "Solix",
+    "titleHighlight": "SOLIX Power",
     "subtitle": "We are dedicated to making solar energy accessible, affordable, and reliable for everyone.",
     "mission": {
       "title": "Our Mission",
-      "desc": "At Solix, our mission is to accelerate the transition to renewable energy by providing comprehensive solar solutions. We believe that clean energy should be within reach for every home and business."
+      "desc": "At SOLIX Power, our mission is to accelerate the transition to renewable energy by providing comprehensive solar solutions. We believe that clean energy should be within reach for every home and business."
     },
     "vision": {
       "title": "Our Vision",
       "desc": "A future where solar energy powers communities, reduces carbon footprints, and creates a sustainable world for the next generations."
     },
     "whyUs": {
-      "title": "Why Choose Solix?",
+      "title": "Why Choose SOLIX Power?",
       "items": [
         {
           "title": "End-to-End Service",
@@ -106,9 +107,10 @@
     "titleHighlight": "Touch",
     "subtitle": "Have a question or ready to start your solar journey? We are here to help.",
     "phone": "Phone",
+    "sales": "Sales",
+    "support": "Support",
     "email": "Email",
     "address": "Address",
-    "hours": "Business Hours",
     "response": "We typically respond within 24 hours."
   },
   "portfolio": {

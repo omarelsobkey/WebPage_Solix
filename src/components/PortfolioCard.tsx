@@ -15,17 +15,17 @@ export default function PortfolioCard({
 }) {
   return (
     <Reveal delay={index * 100}>
-      <div className="group overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all hover:-translate-y-2 hover:shadow-lg">
+      <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/60 shadow-sm backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-solix-gold/5">
         <div className="relative aspect-[3/2] overflow-hidden bg-solix-cream">
           <Image
             src={item.image}
             alt={title}
             fill
-            className="object-cover transition-all duration-500 group-hover:scale-110"
+            className="object-cover transition-all duration-700 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-solix-black/0 transition-colors duration-300 group-hover:bg-solix-black/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
         </div>
-        <div className="p-5 transition-colors duration-300 group-hover:bg-solix-cream/50">
+        <div className="relative p-6">
           <h3 className="font-semibold text-solix-black">{title}</h3>
           <p className="mt-2 text-sm leading-relaxed text-gray-600">
             {description}
