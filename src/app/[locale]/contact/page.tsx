@@ -16,7 +16,7 @@ function ActionButtons({ wa, tel }: { wa: string; tel: string }) {
   return (
     <div className="flex items-center gap-1.5">
       <a
-        href={tel}
+        href={`tel:${tel}`}
         className="inline-flex items-center gap-1 rounded-full bg-blue-600/15 px-2.5 py-1 text-[10px] font-medium text-blue-500 transition-all hover:bg-blue-600/25 hover:text-blue-400 active:scale-95"
       >
         <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -74,7 +74,7 @@ export default function Footer() {
                   <div key={i} className="flex flex-wrap items-center gap-1.5">
                     <span dir="ltr" className="inline-block">{phone.label}</span>
                     <a
-                      href={phone.tel}
+                      href={`tel:${phone.tel}`}
                       className="inline-flex items-center gap-1 rounded-full bg-blue-600/20 px-2 py-0.5 text-[10px] text-blue-400 transition-all hover:bg-blue-600/30 hover:text-blue-300"
                     >
                       Call
@@ -99,7 +99,7 @@ export default function Footer() {
                   <div key={i} className="flex flex-wrap items-center gap-1.5">
                     <span dir="ltr" className="inline-block">{phone.label}</span>
                     <a
-                      href={phone.tel}
+                      href={`tel:${phone.tel}`}
                       className="inline-flex items-center gap-1 rounded-full bg-blue-600/20 px-2 py-0.5 text-[10px] text-blue-400 transition-all hover:bg-blue-600/30 hover:text-blue-300"
                     >
                       Call
