@@ -42,6 +42,7 @@ export default function PortfolioGallery({
         <PortfolioModal
           item={selected}
           title={titles[selected.id]}
+          description={descriptions[selected.id]}
           currentIndex={imageIndex}
           onClose={() => setSelectedId(null)}
           onPrev={() =>
