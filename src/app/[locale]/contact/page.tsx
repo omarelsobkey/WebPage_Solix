@@ -134,20 +134,23 @@ export default async function ContactPage({
               </Reveal>
 
               <Reveal delay={200}>
-                <div className="group rounded-2xl bg-solix-cream/50 p-5 transition-all hover:bg-solix-cream hover:shadow-md">
+                <div className="group rounded-2xl bg-solix-cream/50 p-6 transition-all hover:bg-solix-cream hover:shadow-md">
                   <div className="flex items-start gap-5">
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-solix-gold/10 text-lg">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-solix-gold/10 text-xl">
                       📍
                     </span>
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wider text-solix-gold">
+                    <div className="min-w-0 flex-1">
+                      <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-solix-gold">
                         {t("address")}
                       </p>
-                      <div className="mt-1 space-y-0.5">
+                      <div className="grid grid-cols-2 gap-2">
                         {contactInfo.address.map((city, i) => (
-                          <p key={i} className="text-sm text-solix-black">
+                          <div
+                            key={i}
+                            className="rounded-lg border border-solix-gold/10 bg-white/50 px-3 py-2 text-sm font-medium text-solix-black"
+                          >
                             {city}
-                          </p>
+                          </div>
                         ))}
                       </div>
                     </div>
@@ -173,7 +176,7 @@ export default async function ContactPage({
                   <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-solix-gold">
                     Social
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="space-y-3">
                     {socialLinks.map((s) => {
                       const Icon = socialIconMap[s.label as keyof typeof socialIconMap];
                       return (
@@ -182,10 +185,15 @@ export default async function ContactPage({
                           href={s.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-solix-black/60 transition-all hover:border-solix-gold/50 hover:text-solix-gold hover:shadow-[0_0_20px_rgba(212,175,55,0.15)]"
-                          title={s.label}
+                          className="flex items-center gap-3 rounded-xl border border-white/20 p-3 text-solix-black/60 transition-all hover:border-solix-gold/40 hover:text-solix-gold hover:shadow-[0_0_20px_rgba(212,175,55,0.1)]"
                         >
-                          {Icon && <Icon className="h-4 w-4" />}
+                          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/30">
+                            {Icon && <Icon className="h-4 w-4" />}
+                          </span>
+                          <div className="min-w-0 flex-1">
+                            <p className="text-sm font-medium">{s.label}</p>
+                            <p className="truncate text-xs text-solix-black/40">{s.href}</p>
+                          </div>
                         </a>
                       );
                     })}
