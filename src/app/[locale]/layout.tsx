@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Tajawal } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -7,14 +7,17 @@ import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
   subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const tajawal = Tajawal({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["arabic"],
+  variable: "--font-body",
+  display: "swap",
 });
 
 export function generateStaticParams() {
@@ -42,7 +45,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={dir}
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      className={`${locale === "ar" ? tajawal.variable : montserrat.variable} antialiased`}
     >
       <body className="flex min-h-screen flex-col">
         <NextIntlClientProvider messages={messages}>

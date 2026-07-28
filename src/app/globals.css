@@ -14,8 +14,8 @@
   --color-solix-cream: var(--solix-cream);
   --color-solix-black: #000000;
   --color-solix-white: #FFFFFF;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-body);
 }
 
 @layer base {
@@ -25,6 +25,6 @@
   body {
     background: var(--background);
     color: var(--foreground);
-    font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+    font-family: var(--font-body), sans-serif;
   }
 }
