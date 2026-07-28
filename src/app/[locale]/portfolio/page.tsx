@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { portfolioItems } from "@/lib/constants";
-import PortfolioCard from "@/components/PortfolioCard";
+import PortfolioGallery from "@/components/PortfolioGallery";
 import Reveal from "@/components/Reveal";
 
 export default async function PortfolioPage({
@@ -13,6 +13,13 @@ export default async function PortfolioPage({
   setRequestLocale(locale);
   const t = await getTranslations("portfolio");
   const items = await getTranslations("portfolio.items");
+
+  const titles: Record<string, string> = {};
+  const descriptions: Record<string, string> = {};
+  for (const item of portfolioItems) {
+    titles[item.id] = items(`${item.id}.title`);
+    descriptions[item.id] = items(`${item.id}.desc`);
+  }
 
   return (
     <>
@@ -46,17 +53,7 @@ export default async function PortfolioPage({
       <section className="clip-diagonal-both -mt-16 bg-solix-cream px-6 pt-28 pb-24">
         <div className="mx-auto max-w-6xl">
           {portfolioItems.length > 0 ? (
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {portfolioItems.map((item, i) => (
-                <PortfolioCard
-                  key={item.id}
-                  item={item}
-                  title={items(`${item.id}.title`)}
-                  description={items(`${item.id}.desc`)}
-                  index={i}
-                />
-              ))}
-            </div>
+            <PortfolioGallery items={portfolioItems} titles={titles} descriptions={descriptions} />
           ) : (
             <Reveal>
               <div className="rounded-2xl border border-dashed border-gray-300 bg-white/60 py-20 text-center backdrop-blur-sm">

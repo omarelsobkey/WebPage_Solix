@@ -119,17 +119,13 @@
     "subtitle": "Take a look at some of our completed projects — we take pride in every installation.",
     "empty": "No projects added yet. They will appear here soon.",
     "items": {
-      "villa-6-october": {
-        "title": "Villa — 6 October",
-        "desc": "Complete 10kW solar system installation for a residential villa in 6 October City."
+      "70kw-maghra": {
+        "title": "70kW — Maghra",
+        "desc": "70kW solar system."
       },
-      "commercial-maadi": {
-        "title": "Commercial Building — Maadi",
-        "desc": "Supply and installation of solar panels for a commercial building in Maadi."
-      },
-      "factory-6-october": {
-        "title": "Factory — 6 October",
-        "desc": "50kW solar energy solution for an industrial factory in 6 October industrial zone."
+      "150kw-menya": {
+        "title": "150kW — Menya",
+        "desc": "150kW solar system."
       }
     }
   },

@@ -19,20 +19,60 @@ export const socialLinks = [
 
 export interface PortfolioItem {
   id: string;
-  image: string;
+  folder: string;
+  images: string[];
 }
 
 export const portfolioItems: PortfolioItem[] = [
   {
-    id: "villa-6-october",
-    image: "/portfolio/placeholder.svg",
+    id: "70kw-maghra",
+    folder: "01",
+    images: [
+      "/portfolio/01/image-1.jpg",
+      "/portfolio/01/image-2.jpg",
+      "/portfolio/01/image-3.jpg",
+      "/portfolio/01/image-4.jpg",
+      "/portfolio/01/image-5.jpg",
+      "/portfolio/01/image-6.jpg",
+      "/portfolio/01/image-7.jpg",
+      "/portfolio/01/image-8.jpg",
+      "/portfolio/01/image-9.jpg",
+      "/portfolio/01/image-10.jpg",
+      "/portfolio/01/image-11.jpg",
+      "/portfolio/01/image-12.jpg",
+      "/portfolio/01/image-13.jpg",
+      "/portfolio/01/image-14.jpg",
+      "/portfolio/01/image-15.jpg",
+      "/portfolio/01/image-16.jpg",
+      "/portfolio/01/image-17.jpg",
+      "/portfolio/01/image-18.jpg",
+      "/portfolio/01/image-19.jpg",
+      "/portfolio/01/image-20.jpg",
+      "/portfolio/01/image-21.jpg",
+      "/portfolio/01/image-22.jpg",
+      "/portfolio/01/image-23.jpg",
+      "/portfolio/01/image-24.jpg",
+      "/portfolio/01/image-25.jpg",
+      "/portfolio/01/image-26.jpg",
+      "/portfolio/01/image-27.jpg",
+    ],
   },
   {
-    id: "commercial-maadi",
-    image: "/portfolio/placeholder.svg",
-  },
-  {
-    id: "factory-6-october",
-    image: "/portfolio/placeholder.svg",
+    id: "150kw-menya",
+    folder: "02",
+    images: [
+      "/portfolio/02/image-1.jpg",
+      "/portfolio/02/image-2.jpg",
+      "/portfolio/02/image-3.jpg",
+      "/portfolio/02/image-4.jpg",
+      "/portfolio/02/image-5.jpg",
+      "/portfolio/02/image-6.jpg",
+      "/portfolio/02/image-7.jpg",
+      "/portfolio/02/image-8.jpg",
+      "/portfolio/02/image-9.jpg",
+      "/portfolio/02/image-10.jpg",
+      "/portfolio/02/image-11.jpg",
+      "/portfolio/02/image-12.jpg",
+    ],
   },
 ];
